@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+<meta charset="UTF-8"></meta>
+<title>calc Least Square</title>
+<script src="calcLs.js" >
+</script>
+<script>
+	var Ndat = x.length;
+	let Nord = 2;// 2nd order
+	let Nmat = Nord+1;
+	
+	var XX = [[0.0,0.0,0.0],[0.0,0.0,0.0],[0.0,0.0,0.0]];
+	// var XX = new Array(3); for(let lp = 0; lp < Nmat; lp++) { XX[lp] = new Array(3).fill(0);}
+	var IX = [[0.0,0.0,0.0],[0.0,0.0,0.0],[0.0,0.0,0.0]];
+	var XY = [0.0,0.0,0.0];
+	var A = [0.0,0.0,0.0];
+	makeXX(x,XX);
+	makeXY(x,y,XY);
+	invertMat(XX,IX);
+	prodIXXY(IX,XY,A);
+document.write("A=",A)
+</script>
+</head>
+<body>
+</body>
+</html>
