@@ -13,7 +13,7 @@ X[1,:]=x**1
 XX=X @ X.T
 XY=X @ y.T
 coef=np.linalg.inv(XX).T @ XY
-
+print(coef)
 #XX
 #array([[7.22666e+05, 4.41000e+04, 2.87000e+03],
 #       [4.41000e+04, 2.87000e+03, 2.10000e+02],
