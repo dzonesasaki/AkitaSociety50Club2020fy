@@ -8,5 +8,5 @@
  テストデータ生成用シート付き。ノイズはLCGsとBox-Muller法を利用。
 - lsmat.py : python3用スクリプト。```python3 lsmat.py``` で実行。実行サイトで貼り付けて実行させても可。
 - calcLs.js : javascriptで計算。 ```node calcLs.js``` で実行。実行サイトで貼り付けて実行させても可。
-- lsMat.m : matlab/octaveで計算するスクリプト
+- lsMat.m : matlab/octaveで計算するスクリプト(学校のＰＣにはソフトが入ってないため実行できませんので、自宅のＰＣで行ってください）
 - data.txt : テストデータ。（スクリプト上では読み込み部はコメントアウトしているので利用しない）
